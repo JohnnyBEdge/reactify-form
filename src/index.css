@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  color: black;
+  border: solid 3px #61dafb;
+  height: 500px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+form label {
+  color: black;
+  font-size: 15px;
+}
+
+label input {
+  margin-left: 10px;
+  margin: 5px;
+}
+
+#pwd_field {
+  width: 50px;
+  align-self: center;
+}
+
+#forgot {
+  font-size: 12px;
+}
