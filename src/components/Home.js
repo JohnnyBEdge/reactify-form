@@ -1,8 +1,12 @@
 import React from 'react'
 import logo from '../logo.svg';
-// import './App.css';
+import {
+    BrowserRouter as Router,
+    Link,
 
-class UserLogin extends React.Component{
+  } from "react-router-dom";
+
+class Home extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -40,9 +44,10 @@ class UserLogin extends React.Component{
 
     render(){
         return (
-            <form onSubmit = {this.handleLogin}>
+            <form id="home_form" onSubmit = {this.handleLogin}>
                 <img src={logo} className="App-logo" alt="logo" />
                 <br/>
+                <h1>Reactify Forms</h1>
                 <label>
                     Username:
                     <input type='text' 
@@ -58,13 +63,20 @@ class UserLogin extends React.Component{
                 </label>
                 <br/>
 
-                <input id="pwd_field" type='submit' value="Log In" />
-                <p id="signUp">Don't have an account? <a href="#">Sign up!</a> </p>
-                <p id="forgot">Forgot username and/or password? <a href="#">Click Here!</a></p>
+                <input class="submit_btn" type='submit' value="Log In" />
+
+                <p id="signUp">Don't have an account? </p>
+                    <Link to='/AcctCreation'>
+                        Sign up!
+                    </Link>
+                <p id="forgot">Forgot username and/or password? </p>
+                <Link to="/ForgotInfo">
+                    Click Here!
+                </Link>
             </form>
             
         )
     }
 }
 
-export default UserLogin;
+export default Home;

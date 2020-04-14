@@ -21,32 +21,88 @@ body {
   color: white;
 }
 
-form {
+p {
+  margin: 5px;
+}
+
+a {
+  padding: 5px;
+}
+
+img {
+  margin: 50px 0px 0px 0px;
+}
+label {
+  color: black;
+  font-size: 15px;
+}
+input {
+  margin: 5px;
+  width: 150px;
+  padding: 5px;
+  border-radius: 3px;
+}
+.submit_btn {
+  background-color: #61dafb;
+  border-radius: 10px;
+  height: 30px;
+  font-size: 15px;
+  border: black 1px solid;
+  margin: 5px;
+}
+
+
+/* ===================HOME FORM==================== */
+
+#home_form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: whitesmoke;
   color: black;
   border: solid 3px #61dafb;
-  height: 500px;
   width: 300px;
   border-radius: 5px;
 }
 
-form label {
-  color: black;
+#home_btn {
+  background-color: #61dafb;
+  border-radius: 10px;
+  height: 30px;
   font-size: 15px;
+  border: black 1px solid;
 }
 
-label input {
-  margin-left: 10px;
-  margin: 5px;
+/* ================FORGOT USER INFO FORM======================== */
+#forgot_form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  color: black;
+  border: solid 3px #61dafb;
+  border-radius: 5px;
 }
 
-#pwd_field {
-  width: 50px;
-  align-self: center;
+#forgot_btn {
+  background-color: #61dafb;
+  border-radius: 10px;
+  height: 30px;
+  font-size: 15px;
+  border: black 1px solid;
 }
 
-#forgot {
-  font-size: 12px;
+/* ================ACCOUNT CREATION FORM======================== */
+
+#acct_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  color: black;
+  border: solid 3px #61dafb;
+  width: 350px;
+  border-radius: 5px;
 }
+

@@ -1,17 +1,35 @@
-import React from 'react';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
+import Home from './components/Home';
 import './App.css';
-import UserLogin from './components/UserLogin'
+import AcctCreation from './components/AcctCreation'
+import ForgotInfo from './components/ForgotInfo'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-        <p>
-          Assignment: Reactify Forms
-        </p>
+    <Router>
+      <div>
+        <Switch>
 
-      <UserLogin />
-    </div>
+        <Route path="/" exact>
+            <Home />
+        </Route>
+
+          <Route path="/AcctCreation">
+              <AcctCreation />
+          </Route> 
+
+          <Route path="/ForgotInfo">
+            <ForgotInfo />
+          </Route>
+
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
-export default App;
